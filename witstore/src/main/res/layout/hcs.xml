@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@color/my_hcs_background"
+              android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/my_white"
+        android:layout_weight="0.5"
+        android:id="@+id/rlshow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:id="@+id/imageView19"
+            android:src="@drawable/wsd_c_wd_icon"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView22"
+            android:layout_toStartOf="@+id/imageView22" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView22" android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_width="126dp" android:layout_height="126dp"
+                   android:id="@+id/imageView23" android:src="@drawable/wsd_c_sd_icon"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignTop="@+id/imageView19"
+            android:layout_toRightOf="@+id/imageView22"
+            android:layout_toEndOf="@+id/imageView22"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_wd"
+            android:textColor="@color/my_black"
+            android:textSize="23sp"
+            android:gravity="center_horizontal"
+            android:text="0.0℃"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_alignEnd="@+id/tv_wdsx"
+            android:layout_alignRight="@+id/imageView19" />
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:id="@+id/tv_sd" android:textColor="@color/my_black"
+                  android:textSize="23sp"
+                  android:gravity="center_horizontal"
+            android:text="0.0%RH"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_alignRight="@+id/imageView23"
+            android:layout_alignEnd="@+id/imageView23" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="温度上下限："
+            android:id="@+id/textView7"
+            android:textColor="@color/my_blue"
+            android:textSize="10sp"
+            android:layout_below="@+id/imageView19"
+            android:layout_alignLeft="@+id/imageView19"
+            android:layout_alignStart="@+id/imageView19"
+            android:layout_marginTop="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_wdsx"
+            android:textColor="@color/my_black1"
+            android:textSize="10sp"
+            android:text="0.0℃～0.0℃"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="湿度上下限："
+                  android:id="@+id/textView9"
+                  android:textColor="@color/my_blue"
+            android:textSize="10sp"
+            android:layout_alignTop="@+id/tv_wdsx"
+            android:layout_alignLeft="@+id/imageView23"
+            android:layout_alignStart="@+id/imageView23" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall"
+                  android:id="@+id/tv_sdsx"
+                  android:textColor="@color/my_black1"
+            android:textSize="10sp"
+            android:text="0.0%RH～0.0%RH"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9" />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/my_white" android:layout_margin="10dp"
+                    android:layout_weight="0.5" >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall"
+                  android:text="空调" android:id="@+id/tv_kt"
+                  android:textColor="@color/my_black1"
+            android:textSize="20sp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_alignTop="@+id/img_kt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="去湿"
+                  android:id="@+id/tv_qs" android:textColor="@color/my_black1"
+                  android:textSize="20sp"
+                  android:layout_centerVertical="true" android:layout_alignLeft="@+id/tv_kt"
+                  android:layout_alignStart="@+id/tv_kt"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="增湿"
+                  android:id="@+id/tv_zs" android:textColor="@color/my_black1"
+                  android:textSize="20sp"
+                  android:layout_marginBottom="27dp" android:layout_alignParentBottom="true"
+                  android:layout_alignLeft="@+id/tv_qs"
+                  android:layout_alignStart="@+id/tv_qs"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/img_kt"
+            android:src="@drawable/wsd_c_zl_icon"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_toRightOf="@+id/tv_kt"
+            android:layout_toEndOf="@+id/tv_qs"
+            android:layout_marginTop="28dp" />
+        <ImageView android:layout_width="32dp" android:layout_height="32dp"
+                   android:id="@+id/img_qs" android:src="@drawable/wsd_c_qs_icon"
+                   android:layout_centerVertical="true" android:layout_alignLeft="@+id/img_kt"
+                   android:layout_alignStart="@+id/img_kt"/>
+        <ImageView android:layout_width="32dp" android:layout_height="32dp"
+                   android:id="@+id/img_zs" android:src="@drawable/wsd_c_zs_icon"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignLeft="@+id/img_qs"
+                   android:layout_alignStart="@+id/img_qs" android:layout_marginBottom="23dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="通风"
+                  android:id="@+id/tv_tf" android:textColor="@color/my_black1"
+                  android:layout_marginLeft="31dp" android:layout_marginStart="31dp"
+                  android:textSize="20sp"
+            android:layout_alignTop="@+id/img_tf"
+            android:layout_toRightOf="@+id/editText3"
+            android:layout_toEndOf="@+id/editText3" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="净化"
+                  android:id="@+id/tv_jh" android:textColor="@color/my_black1"
+                  android:textSize="20sp"
+                  android:layout_alignTop="@+id/tv_qs" android:layout_alignLeft="@+id/tv_tf"
+                  android:layout_alignStart="@+id/tv_tf"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="消毒"
+                  android:id="@+id/tv_xd" android:textColor="@color/my_black1"
+                  android:textSize="20sp"
+                  android:layout_alignTop="@+id/tv_zs" android:layout_alignLeft="@+id/tv_jh"
+                  android:layout_alignStart="@+id/tv_jh"/>
+        <ImageView android:layout_width="32dp" android:layout_height="32dp" android:id="@+id/img_tf"
+                   android:src="@drawable/wsd_c_tf_icon"
+                   android:layout_marginLeft="34dp"
+                   android:layout_marginStart="34dp"
+            android:layout_toRightOf="@+id/tv_tf"
+                   android:layout_toEndOf="@+id/tv_tf"
+            android:layout_marginTop="28dp" />
+        <ImageView android:layout_width="32dp" android:layout_height="32dp" android:id="@+id/img_jh"
+                   android:src="@drawable/wsd_c_jh_icon"
+                   android:layout_alignTop="@+id/img_qs" android:layout_alignLeft="@+id/img_tf"
+                   android:layout_alignStart="@+id/img_tf"/>
+        <ImageView android:layout_width="32dp" android:layout_height="32dp" android:id="@+id/img_xd"
+                   android:src="@drawable/wsd_c_xd_icon"
+                   android:layout_alignTop="@+id/img_zs" android:layout_alignLeft="@+id/img_jh"
+                   android:layout_alignStart="@+id/img_jh"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/img_kt"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dim_foreground_disabled_material_light" />
+    </RelativeLayout>
+</LinearLayout>

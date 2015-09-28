@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dragscrollview"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/dimen_10dp"
+            android:text="我的信息"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/setting_touch_volume_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_top"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/Tv_mykey1"
+                style="@style/setkey_textview"
+                android:layout_alignParentLeft="true"
+                android:text="用户名:" />
+
+            <TextView
+                android:id="@+id/Tv_myvaule1"
+                style="@style/setkey_textview"
+                android:layout_alignParentRight="true"
+                android:text="1.0" />
+
+        </RelativeLayout>
+<!-- 
+        <RelativeLayout
+            android:id="@+id/setting_touch_volume_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_mid"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/Tv_mykey2"
+                style="@style/setkey_textview"
+                android:layout_alignParentLeft="true"
+                android:text="用户ID:" />
+
+            <TextView
+                android:id="@+id/Tv_myvaule2"
+                style="@style/setkey_textview"
+                android:layout_alignParentRight="true"
+                android:text="admin" />
+
+        </RelativeLayout>
+ -->
+        <RelativeLayout
+            android:id="@+id/setting_touch_menu_key"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_mid"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/Tv_mykey3"
+                style="@style/setkey_textview"
+                android:layout_alignParentLeft="true"
+                android:text="版  本:" />
+
+            <TextView
+                android:id="@+id/Tv_myvaule3"
+                style="@style/setkey_textview"
+                android:layout_alignParentRight="true"
+                android:text="版  本:" />
+
+        </RelativeLayout>
+         <RelativeLayout
+            android:id="@+id/setting_touch_menu_key1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_mid"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/Tv_mykey4"
+                style="@style/setkey_textview"
+                android:layout_alignParentLeft="true"
+                android:text="SDK版本：" />
+
+            <TextView
+                android:id="@+id/Tv_myvaule4"
+                style="@style/setkey_textview"
+                android:layout_alignParentRight="true"
+                android:text="SDK版本：" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_touch_back_key"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_bottom"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" >
+
+            <TextView
+                android:id="@+id/Tv_mykey5"
+                style="@style/setkey_textview"
+                android:layout_alignParentLeft="true"
+                android:text="手机型号：" />
+
+            <TextView
+                android:id="@+id/Tv_myvaule5"
+                style="@style/setkey_textview"
+                android:layout_alignParentRight="true"
+                android:text="手机型号：" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Btnback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_tile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#2f3129">
+
+    <TextView
+        android:id="@+id/tv_tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/index_home_page"
+        android:textColor="#ffffffff"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:id="@+id/img_mue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/index_t_cd_icon"
+        android:clickable="true" />
+    <ImageButton
+        android:id="@+id/img_serch"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/index_t_ss_icon"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_help"
+        android:src="@drawable/index_t_zy"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_back"
+        android:src="@drawable/t_fh"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        android:clickable="true" />
+
+    <SearchView
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="@string/searchStr"
+        android:imeOptions="actionSearch"
+        android:visibility="gone"
+        android:iconifiedByDefault = "true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+

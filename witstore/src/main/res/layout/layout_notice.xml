@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/homepage_notice_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_12"
+            android:paddingLeft="@dimen/vi_margin"
+            android:paddingRight="@dimen/margin_8"
+            android:paddingTop="@dimen/margin_12"
+            android:src="@drawable/index_c_lb" android:layout_marginLeft="8dp"/>
+
+        <TextView
+              android:layout_width="25dp"
+              android:layout_height="20dp"
+              android:id="@+id/tv_msg_tag" android:background="@drawable/index_c_tip_qp"
+              android:textSize="11sp" android:gravity="center_horizontal"
+              android:visibility="gone"/>
+        <ViewFlipper
+            android:id="@+id/homepage_notice_vf"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+</LinearLayout>

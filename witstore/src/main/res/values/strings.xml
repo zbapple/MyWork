@@ -1,0 +1,167 @@
+<resources>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="app_name">智慧档案馆</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="index_home_page">首页</string>
+    <string name="index_my">我的</string>
+    <string name="index_refresh">刷新</string>
+    <string name="index_yy">声控</string>
+    <string name="index_mjj">密集架</string>
+    <string name="index_wsd">温湿度</string>
+    <string name="index_stda">RFID</string>
+    <string name="index_mj">门禁</string>
+    <string name="index_xf">光盘</string>
+    <string name="index_dg">灯光</string>
+    <string name="index_sp">视频</string>
+    <string name="index_gd">更多</string>
+    <string name="no_data">没有数据</string>
+    <string name="storeId">库房id</string>
+    <string name="areaId">分区ID</string>
+    <string name="list_weizhi">位 置：</string>
+    <string name="list_caozuo">操 作：</string>
+    <string name="list_zuokai">左开</string>
+    <string name="list_youkai">右开</string>
+    <string name="list_tingzi">停止</string>
+    <string name="list_fenge">  |  </string>
+    <string name="list_kai">开</string>
+    <string name="list_jcjb">解除警报</string>
+    <string name="list_guan">关</string>
+    <string name="list_wendu">温 度:</string>
+    <string name="list_shidu">湿 度:</string>
+    <string name="alarm_type">类 型:</string>
+    <string name="alarm_msg">消 息:</string>
+    <string name="alarm_jb">级 别:</string>
+    <string name="alarm_name">名 称:</string>
+    <string name="alarm_time">时 间:</string>
+    <string name="tv_connect_cam"></string>
+    <string name="save_pw">记住密码</string>
+    <string name="open">已开启</string>
+    <string name="close">已关闭</string>
+    <string name="rs">热搜 ：</string>
+    <string name="no_msg">暂无消息.......</string>
+    <string name="tv_connect_cam_error">无法连接，请确认摄像头是否开启。</string>
+    <string name="not_data">暂无数据</string>
+    <string name="text_begin">请开始说话&#8230;</string>
+
+
+    <string name="text_isr_abnf_hint">\t上传内容为：\n\t#ABNF 1.0 gb2312;\n\tlanguage zh-CN;\n\tmode voice;\n\troot $main;\n\t$main = $place1 到$place2 ;\n\t$place1 = 北京 | 武汉 | 南京 | 天津 | 东京;\n\t$place2 = 上海 | 合肥;</string>
+
+
+
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+
+    <!-- 合成 -->
+    <string-array name="voicer_cloud_entries">
+        <item>小燕</item>
+        <item>小宇</item>
+        <item>凯瑟琳</item>
+        <item>亨利</item>
+        <item>玛丽</item>
+        <item>小研</item>
+        <item>小琪</item>
+        <item>小峰</item>
+        <item>小梅</item>
+        <item>小莉</item>
+        <item>小蓉</item>
+        <item>小芸</item>
+        <item>小坤</item>
+        <item>小强 </item>
+        <item>小莹</item>
+        <item>小新</item>
+        <item>楠楠</item>
+        <item>老孙</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="voicer_local_entries">
+        <item>小燕</item>
+        <item>小峰</item>
+    </string-array>
+    <string-array name="voicer_local_values">
+        <item>xiaoyan</item>
+        <item>xiaofeng</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string
+        name="tts_toast_format"
+        formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- 唤醒 -->
+    <string name="example_explain_wake">唤醒是指通过说出特定的唤醒词来唤醒处于休眠状态下的设备，又分为唤醒和唤醒+识别。</string>
+    <string name="wake_demo_hint">请点击“开始唤醒”后读出您资源所带的唤醒词（本示例为“讯飞语音”），当引擎计算得分大于您设置的门限值时，即可进行唤醒。</string>
+    <string name="oneshot_demo_hint">请点击“唤醒+识别”后读出您资源所带的唤醒词（本示例为“讯飞语音”）+语法中指定的识别对象（本示例为“张三|李四|张海洋”，语法定义详见demo工程的asset/call.bnf文件），当引擎计算得分大于您设置的门限值时，即可进行唤醒+识别。</string>
+    <string name="default_wake_resource_hint">（默认资源中唤醒词：讯飞语音、讯飞语点）</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="myname">Name</string>
+    <string name="jzmm">记住密码</string>
+    <string name="appname">智慧档案馆</string>
+    <string name="tongfeng">通风</string>
+    <string name="index_bj">报警</string>
+    <string name="searchStr">请输入您要查询的内容....</string>
+
+</resources>

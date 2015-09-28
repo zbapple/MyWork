@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#E9E9E9">
+
+    <include layout="@layout/public_content" />
+
+
+    <com.wujia.witstore.ui.view.MyViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/kj_vp"
+        android:visibility="visible">
+    </com.wujia.witstore.ui.view.MyViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:id="@+id/rl_lie">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_lie1"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_lie2"
+            android:textColor="@color/black"
+            android:layout_alignTop="@+id/tv_lie1"
+            android:layout_toLeftOf="@+id/imgbt_hl"
+            android:layout_toStartOf="@+id/imgbt_hl"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbt_gb"
+            android:src="@drawable/mjj_act_lie_kg"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbt_hl"
+            android:src="@drawable/mjj_act_lie_hl"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_lie1"
+            android:layout_toEndOf="@+id/tv_lie1"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbt_tf"
+            android:src="@drawable/mjj_act_lie_tf"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="28dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:visibility="gone"
+        android:layout_margin="10dip" />
+</LinearLayout>

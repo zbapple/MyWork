@@ -1,0 +1,14 @@
+﻿#ABNF 1.0 UTF-8;
+language zh-CN; 
+mode voice;
+
+root $main;
+$main = $place1 执行 $place2;
+$place1 = $mjj|$dg|$mj;
+$place2 = 打开|关闭|通风|合拢|右开|左开|停止|开|关;
+$digit = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9| 0;
+$mjj = 第$digit<1-4>列密集架|$digit<1-4>列密集架|$digit<1-4>密集架|密集架;
+$dg = $dgty;
+$dgty = 库房灯|灯一|灯二;
+$mj = $mjty;
+$mjty = 玻璃门|库房门|前台门|木门;

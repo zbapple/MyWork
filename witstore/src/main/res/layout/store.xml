@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ly_wheel"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="10dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="请选择:"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/tv_tile"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@color/blue"
+        android:layout_weight="0.09" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></kankan.wheel.widget.WheelView>
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/bt_confirm"
+       />
+
+
+</LinearLayout>
