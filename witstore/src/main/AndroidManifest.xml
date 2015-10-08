@@ -26,7 +26,7 @@
     <application
         android:name=".ui.AppContext"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".ui.activity.LoginActivity"

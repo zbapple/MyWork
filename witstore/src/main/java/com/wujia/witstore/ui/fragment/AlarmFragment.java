@@ -89,7 +89,8 @@ public class AlarmFragment extends KJFragment implements
                 initAlarm(dataList);
                 this.getActivity().getIntent().getExtras().clear();
             }
-        }else{
+        }
+        if(dataList==null||dataList.size()<=0){
             loadingData();
         }
     }
@@ -122,7 +123,7 @@ public class AlarmFragment extends KJFragment implements
         tvv4.setText(alarm.getDeviceName());
         tvv42.setText(alarm.getIsHandle().equals("0") ? "未处理" : "已处理");
         tvv5.setText(alarm.getAlarmDate());
-        tv_no.setText(position+"");
+        tv_no.setText(position+1+"");
         rlto.setTag(position);
         rlto.setOnClickListener(this);
     }

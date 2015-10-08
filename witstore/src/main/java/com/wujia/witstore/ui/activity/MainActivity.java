@@ -149,64 +149,31 @@ public class MainActivity extends KJActivity {
                 }
             }
         });
-        myChangeFragment(R.id.fm_content, manFragment, true);
-        bottomRg.setOnClickListener(new View.OnClickListener() {
+
+        RadioButton tempButton1 = (RadioButton) findViewById( R.id.rbOne);
+        tempButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-
-                    case R.id.rbTwo:
-                        // TODO: 2015/8/10 点击声控事件
-                        voiceStart();
-                        break;
-                }
+                myChangeFragment(R.id.fm_content, manFragment, true);
             }
         });
 
-        bottomRg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
+        RadioButton tempButton2 = (RadioButton) findViewById(R.id.rbTwo);
+        tempButton2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                switch (checkedId) {
-                    case R.id.rbOne:
-                        // TODO: 2015/8/10 点击首页事件
-                        RadioButton tempButton1 = (RadioButton) findViewById(checkedId);
-                        tempButton1.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                myChangeFragment(R.id.fm_content, manFragment, true);
-                            }
-                        });
-                        break;
-
-                    case R.id.rbTwo:
-                        // TODO: 2015/8/10 点击声控事件
-                        RadioButton tempButton2 = (RadioButton) findViewById(checkedId);
-                        tempButton2.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                voiceStart();
-                            }
-                        });
-                        break;
-
-                    case R.id.rbThree:
-                        // TODO: 2015/8/10 点击我的事件
-                        RadioButton tempButton3 = (RadioButton) findViewById(checkedId);
-                        tempButton3.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                startActivity(new Intent(myActiy, MyActivity.class));
-                            }
-                        });
-                        break;
-
-                    default:
-                        break;
-                }
+            public void onClick(View v) {
+                voiceStart();
             }
         });
+
+        RadioButton tempButton3 = (RadioButton) findViewById( R.id.rbThree);
+        tempButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(myActiy, MyActivity.class));
+            }
+        });
+        myChangeFragment(R.id.fm_content, manFragment, true);
     }
 
 
