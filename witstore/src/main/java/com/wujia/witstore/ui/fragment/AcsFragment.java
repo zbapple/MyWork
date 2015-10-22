@@ -163,20 +163,20 @@ public class AcsFragment extends MyKJFragment {
         getThreeName().setVisibility(View.GONE);
     }
 
-    @Override
-    public void showViewPag() {
-        super.showViewPag();
-        getThreeName().setVisibility(View.VISIBLE);
-    }
+                    @Override
+                    public void showViewPag() {
+                        super.showViewPag();
+                        getThreeName().setVisibility(View.VISIBLE);
+                    }
 
-    public class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
+                    public class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
 
-        @Override
-        public void onPageSelected(int arg0) {
-            Log.i("当前页:", arg0 + "");
-            if (listResult != null) {
-                Acs acs = listResult.get(arg0);
-                if (acs != null) {
+                        @Override
+                        public void onPageSelected(int arg0) {
+                            Log.i("当前页:", arg0 + "");
+                            if (listResult != null) {
+                                Acs acs = listResult.get(arg0);
+                                if (acs != null) {
                     getOneName().setText(acs.getStore().getName());
                     getTwoName().setText(acs.getArea() != null ? acs.getArea().getName() : "");
                     getThreeName().setText(acs.getName());

@@ -41,7 +41,8 @@ public class MyHttpUtil {
 
 	public static MyHttpUtil getInstance() {
 		httpUtil = httpUtil == null ? new MyHttpUtil() : httpUtil;
-		path=PreferenceHelper.readString(cxt, AppConfig.APP_SET, "ip", AppConfig.PATH);
+		path=AppConfig.PATH_HTTP+PreferenceHelper.readString(cxt, AppConfig.APP_SET, "ip", AppConfig.IP).trim()+"/"+
+				PreferenceHelper.readString(cxt, AppConfig.APP_SET, "path", AppConfig.P_NAME).trim();
 		return httpUtil;
 	}
 

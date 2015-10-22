@@ -21,8 +21,6 @@ public class MyActivity extends KJActivity {
 
 	@BindView(id= R.id.Tv_myvaule1)
 	TextView tv1;
-//  @BindView(id=R.id.Tv_myvaule2)
-//	TextView tv2;
 	@BindView(id=R.id.Tv_myvaule3)
 	TextView tv3;
 	@BindView(id=R.id.Tv_myvaule4)
@@ -41,7 +39,6 @@ public class MyActivity extends KJActivity {
 	// 初始化控件值
 	public void initWidget(){
 		tv1.setText(LoginActivity.appContext.getUserName());
-		//	tv2.setText(MainActivity.appContext.getUserId());
 		tv3.setText(MyUtils.getOsVersion());
 		tv4.setText(SystemTool.getSDKVersion()+"");
 		tv5.setText(android.os.Build.MODEL);

@@ -88,7 +88,6 @@ public class ImagePagerAdapter extends BaseAdapter {
 			holder = (ViewHolder) view.getTag();
 		}
 
-
 		Object imgUrl=(Object)this.imageIdList.get(getPosition(position));
 		if(imgUrl instanceof Integer){
 			options = new DisplayImageOptions.Builder()

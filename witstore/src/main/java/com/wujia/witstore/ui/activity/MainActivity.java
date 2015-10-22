@@ -1,10 +1,7 @@
 package com.wujia.witstore.ui.activity;
 
-import android.content.BroadcastReceiver;
 import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,16 +13,10 @@ import android.widget.Toast;
 import com.iflytek.VoiceContorlImp;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
-import com.romainpiel.shimmer.Shimmer;
-import com.romainpiel.shimmer.ShimmerTextView;
 import com.wujia.witstore.R;
 import com.wujia.witstore.connector.LoginConnetctor;
 import com.wujia.witstore.connector.official.LoginConnetctorImpl;
-import com.wujia.witstore.data.DBManager;
-import com.wujia.witstore.data.model.Alarm;
-import com.wujia.witstore.data.model.Area;
 import com.wujia.witstore.data.model.ResultInfo;
-import com.wujia.witstore.data.model.Store;
 import com.wujia.witstore.http.AppString;
 import com.wujia.witstore.http.MyHttpUtil;
 import com.wujia.witstore.ui.fragment.AcsFragment;
@@ -38,9 +29,7 @@ import com.wujia.witstore.ui.fragment.ManFragment;
 import com.wujia.witstore.ui.fragment.MyKJFragment;
 import com.wujia.witstore.ui.fragment.RfidFragment;
 import com.wujia.witstore.ui.fragment.SerchFragment;
-import com.wujia.witstore.ui.fragment.VmsFragment;
 import com.wujia.witstore.ui.view.HelpDialog;
-import com.wujia.witstore.utils.DataUtil;
 
 import org.kymjs.kjframe.KJActivity;
 import org.kymjs.kjframe.http.HttpCallBack;
@@ -50,7 +39,6 @@ import org.kymjs.kjframe.ui.KJFragment;
 import org.kymjs.kjframe.ui.ViewInject;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends KJActivity {

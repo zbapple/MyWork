@@ -69,6 +69,7 @@ public class LoginActivity extends KJActivity {
     public static AppContext appContext;
     private View layout;
     private EditText ip;
+    private EditText path;
     LoginActivity ary;
     Intent intent;
     int dataNub ;
@@ -123,8 +124,11 @@ public class LoginActivity extends KJActivity {
                 layout = inflater.inflate(R.layout.alert,
                         (ViewGroup) findViewById(R.id.alert));
                 ip = (EditText) layout.findViewById(R.id.ip);
+                path=(EditText) layout.findViewById(R.id.path);
                 ip.setText(PreferenceHelper.readString(ary,
-                        AppConfig.APP_SET, "ip", AppConfig.PATH));
+                        AppConfig.APP_SET, "ip", AppConfig.IP));
+                path.setText(PreferenceHelper.readString(ary,
+                        AppConfig.APP_SET, "path", AppConfig.P_NAME));
                 new AlertDialog.Builder(this)
                         .setTitle("设置")
                         .setView(layout)
@@ -135,6 +139,9 @@ public class LoginActivity extends KJActivity {
                                                         int which) {
                                         PreferenceHelper.write(ary,
                                                 AppConfig.APP_SET, "ip", ip
+                                                        .getText().toString());
+                                        PreferenceHelper.write(ary,
+                                                AppConfig.APP_SET, "path", path
                                                         .getText().toString());
                                     }
                                 }).setNegativeButton("取消", null).show();

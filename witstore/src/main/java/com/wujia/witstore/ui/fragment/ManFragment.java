@@ -1,6 +1,5 @@
 package com.wujia.witstore.ui.fragment;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,24 +14,15 @@ import android.widget.ViewFlipper;
 import com.romainpiel.shimmer.Shimmer;
 import com.romainpiel.shimmer.ShimmerTextView;
 import com.wujia.witstore.R;
-import com.wujia.witstore.connector.LoginConnetctor;
-import com.wujia.witstore.connector.official.LoginConnetctorImpl;
-import com.wujia.witstore.data.model.ResultInfo;
-import com.wujia.witstore.http.AppString;
-import com.wujia.witstore.http.MyHttpUtil;
-import com.wujia.witstore.ui.activity.LoginActivity;
 import com.wujia.witstore.ui.activity.MainActivity;
 import com.wujia.witstore.ui.myadapter.ImagePagerAdapter;
 import com.wujia.witstore.ui.view.CircleFlowIndicator;
 import com.wujia.witstore.ui.view.ViewFlow;
 
-import org.kymjs.kjframe.http.HttpCallBack;
 import org.kymjs.kjframe.ui.KJFragment;
 import org.kymjs.kjframe.ui.ViewInject;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
